@@ -55,3 +55,5 @@ credentials/
 # Temporary files
 tmp/
 temp/
+
+parent_index_demo.json
