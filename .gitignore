@@ -1,0 +1,57 @@
+# Environment variables / secrets
+.env
+.env.*
+!.env.example
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing / coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Local databases / vector stores
+chroma_db/
+data/
+*.db
+
+# Model / ML caches
+.cache/
+.huggingface/
+huggingface/
+models/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Secrets / local configuration
+secrets/
+credentials/
+
+# Temporary files
+tmp/
+temp/
