@@ -113,5 +113,5 @@ class HybridRAGSearch:
             "policy_type": new_chunks[0].metadata.get("policy_type", "unknown"),
             "total_chunks_in_index": len(ids),
         }
-        get_client().update_current_observation(input={"file": dest_path.name}, output=result)
+        get_client().update_current_span(input={"file": dest_path.name}, output=result)
         return result

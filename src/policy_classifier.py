@@ -16,7 +16,7 @@ POLICY_KEYWORDS = {
     "travel": ["travel insurance", "travel prime", "medical evacuation", "checked baggage", "trip cancellation"],
 }
 
-SAMPLE_CHARS = 3000
+SAMPLE_CHARS = 2500
 
 class PolicyClassification(BaseModel):
     policy_type: Optional[Literal["two_wheeler", "car", "home", "travel"]] = Field(

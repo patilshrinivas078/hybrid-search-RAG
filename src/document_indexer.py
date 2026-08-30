@@ -26,7 +26,7 @@ Usage
 
 Relationship to other modules
 ------------------------------
-- vectorstore.py  : low-level ChromaDB wrapper (querying and storage)
+- vectorstore.py  : low-level ChromaDB wrapper (querying and storage) 
 - hybrid_search.py: queries the index via DocumentIndexer; never writes to it
 - embeddings.py   : generates the dense vector embeddings stored in Chroma
 - sparse_search.py: provides the BM25 index built from Chroma's stored chunks
