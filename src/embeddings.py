@@ -31,19 +31,3 @@ class EmbeddingModel:
         logger.info(f"Generated query embedding with shape: {embedding.shape}")
 
         return embedding[0]
-
-
-if __name__ == "__main__":
-    from src.data_loader import load_all_documents
-    from src.chunking import RecursiveChunker
-
-    docs, failures = load_all_documents("data")
-    chunks = RecursiveChunker().chunk_documents(docs)
-
-    embedder = EmbeddingModel()
-
-    chunk_embeddings = embedder.embed_chunks(chunks)
-    query_embedding = embedder.embed_query("What is attention mechanism?")
-
-    print("Chunk embeddings shape:", chunk_embeddings.shape)
-    print("Query embedding shape:", query_embedding.shape)

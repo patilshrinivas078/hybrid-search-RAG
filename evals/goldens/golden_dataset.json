@@ -1,0 +1,242 @@
+[
+  {
+    "id": "111",
+    "query": "What is covered under endorsement IMT 22A in two-wheeler policy?",
+    "ideal_answer": "IMT 22A is the Voluntary Deductible endorsement. It applies when the insured opts for a voluntary deductible (a fixed amount stated in the policy schedule), in exchange for a reduction in premium under Section I. The insured bears this amount for each and every event, including events giving rise to total loss/constructive total loss.",
+    "source": "Tata AIG two-wheeler Insurance - Page 14, IMT 22A - Voluntary Deductible"
+  },
+  {
+    "id": "112",
+    "query": "What is the UIN for the Return to Invoice add-on cover in two-wheeler Insurance?",
+    "ideal_answer": "The UIN for the Return to Invoice add-on cover (TA17) is IRDAN108RP0001V01200001/A0060V01201819.",
+    "source": "Tata AIG two-wheeler Insurance - Page 16, TA17 - Return to Invoice"
+  },
+  {
+    "id": "123",
+    "query": "As the bike's owner-driver, what is the maximum total personal accident compensation I can claim, including any add-on cover?",
+    "ideal_answer": "Under the base policy (Section III, Personal Accident Cover for Owner-Driver), the maximum is Rs. 15 lakhs during any one period of insurance. If Add-on TA21 (Additional Personal Accident Cover to Owner Driver) is also opted and shown on the schedule, an additional amount (as stated in the policy schedule) is payable on top of the Section II/III limit, in addition to the base cover. The total depends on combining both the base Section III limit and the TA21 add-on amount.",
+    "source": "Tata AIG two-wheeler Insurance - Page 3-4 (Section III - PA Cover for Owner-Driver) + Page 17-18 (TA21 - Additional PA Cover to Owner Driver)"
+  },
+  {
+    "id": "124",
+    "query": "How much will I get if my two-wheeler bike's tyre is damaged, and does it matter whether I have the Tyre and Rim add-on?",
+    "ideal_answer": "Under the base policy (Section I, Clause 2b), damage to tyres and tubes is only payable if the vehicle is damaged at the same time, and even then, liability is limited to 50% of the replacement cost. If the TA34 Tyre and Rim Secure add-on is opted, standalone tyre damage (not requiring simultaneous vehicle damage) is covered, with payout based on unused tread depth: <3mm not covered, 3-5mm = 50%, 5-7mm = 75%, ≥7mm = 100% of the cost of a new tyre/tube, up to a maximum of 2 replacements per policy period.",
+    "source": "Tata AIG two-wheeler Insurance - Page 3 (Section I, Clause 2b) + Page 23-24 (TA34 - Tyre and Rim Secure)"
+  },
+  {
+    "id": "125",
+    "query": "If I sell my two-wheeler and buy a new one, what happens to my No Claim Bonus?",
+    "ideal_answer": "You can transfer/carry forward your NCB to a new vehicle, but only if the fresh insurance is effected within 3 years from the date of sale of the insured vehicle (NCB Rule 6). The rate of NCB applied will be the rate earned at the expiry of the last 12-month period of insurance. Separately, if you are directly substituting the insured vehicle under the same policy (Change of Vehicle condition), the policy can be adjusted on a pro-rata premium basis rather than requiring a fresh policy, subject to submission of a fresh proposal form.",
+    "source": "Tata AIG two-wheeler Insurance - Page 8-9 (General Condition B.8, NCB Rule 6) + Page 8 (General Condition B.6, Change of Vehicle)"
+  },
+  {
+    "id": "126",
+    "query": "What deductibles could apply to a claim I make under Section I of my policy?",
+    "ideal_answer": "Three distinct deductible provisions can apply: (1) a general Deductible stated in the Schedule, which the Company is not liable for on each and every Section I claim (General Exceptions section); (2) a Compulsory Deductible under Endorsement IMT22, applicable to two-wheelers, where the insured bears a first fixed amount for each event; and (3) if opted, a Voluntary Deductible under IMT22A, where the insured chooses a higher deductible in exchange for a premium reduction. If add-on covers like TA16 (Depreciation Allowance) or TA28 (Battery Depreciation Allowance) are active, an additional 'first Rs...' deductible applies per claim under those specific add-ons too.",
+    "source": "Tata AIG two-wheeler Insurance - Page 5 (General Exceptions, Deductible clause) + Page 13-14 (IMT22) + Page 14 (IMT22A) + Page 16, 26 (TA16, TA28 deductibles)"
+  },
+  {
+    "id": "127",
+    "query": "Is water damage to my electric two-wheeler's engine and battery covered, and what add-ons would I need?",
+    "ideal_answer": "Standard engine water-ingress damage is covered under Add-on TA33 (Engine Secure), but this cover explicitly does NOT apply to electric vehicles. For electric vehicles, water-related battery/charging equipment damage (including ingress of water while charging) is instead covered under Add-on TA27 (Electric Surge Secure), which covers arcing, self-heating, leakage of electricity, or short-circuiting including water ingress while charging, up to the vehicle's IDV. Depreciation on a replaced battery can further be recovered under TA28 (Depreciation Allowance - Battery), provided the battery cost is included in the IDV.",
+    "source": "Tata AIG two-wheeler Insurance - Page 25-26 (TA33 - Engine Secure, explicitly excludes EVs) + Page 26 (TA27 - Electric Surge Secure) + Page 26 (TA28 - Depreciation Allowance - Battery)"
+  },
+  {
+    "id": "128",
+    "query": "What premium discounts can I avail on my two-wheeler policy, and what conditions apply to each?",
+    "ideal_answer": "Three separate discount endorsements apply: (1) IMT8 - a discount for membership of a recognised automobile association, forfeited proportionately if membership lapses during the policy; (2) IMT10 - a discount for installing an ARAI-approved anti-theft device, conditional on the device being maintained in efficient condition until policy expiry; and (3) IMT12 - a 50% discount on Own Damage premium for vehicles specially designed/modified for blind, handicapped, or mentally challenged persons, provided this is endorsed on the Registration Book.",
+    "source": "Tata AIG two-wheeler Insurance - Page 12 (IMT8), Page 13 (IMT10), Page 13 (IMT12)"
+  },
+  {
+    "id": "129",
+    "query": "If my claim for bike is delayed, what should I expect in terms of process and compensation for the delay?",
+    "ideal_answer": "You must intimate the claim via the toll-free number, email, or website (call centre details), and furnish loss details including location, date/time, and nature of loss. Notice must be given immediately. Separately, if the Company fails to settle the claim within timelines prescribed by IRDAI, it is liable to pay you interest at a rate 2% above the bank rate, calculated from the date of receipt of intimation until the date of actual payment.",
+    "source": "Tata AIG two-wheeler Insurance - Page 9-10 (Section C - Conditions when a claim arises) + Page 9 (Special Condition E.2 - interest on delayed claims)"
+  },
+  {
+    "id": "130",
+    "query": "On the death of the policyholder, what happens to the bike policy and the No Claim Bonus?",
+    "ideal_answer": "On the death of the sole insured, the policy does not immediately lapse — it remains valid for three months from the date of death or until policy expiry, whichever is earlier, during which the legal heir(s) may apply to transfer the policy (submitting a death certificate, proof of title, and the original policy). Separately, if the deceased was an individual and custody/use of the vehicle passes to their spouse, children, or parents, the NCB entitlement also passes to that person.",
+    "source": "Tata AIG two-wheeler Insurance - Page 9 (Special Condition E.1) + Page 9 (General Condition B.8, NCB Rule 2)"
+  },
+  {
+    "id": "301",
+    "query": "What is the eligible age range for coverage under the Personal Accident section of this home insurance policy?",
+    "ideal_answer": "The Personal Accident benefits are payable to the insured or insured family members aged between 3 months and 65 years.",
+    "source": "SBI Home Insurance - Page 9, Section 7 - Personal Accident, Clause A"
+  },
+  {
+    "id": "302",
+    "query": "Within how many hours of withdrawing cash from a bank must a theft or robbery occur for it to be covered under the Loss of Cash Whilst in Transit section?",
+    "ideal_answer": "The loss must occur through Robbery, hold-up, or Theft within 6 hours of withdrawing the money from a Bank (including ATM centres) while it remains in the insured's possession.",
+    "source": "SBI Home Insurance - Page 12-13, Section 8 - Loss of Cash Whilst in Transit"
+  },
+  {
+    "id": "303",
+    "query": "What is the UIN for the Simple Home Insurance Policy?",
+    "ideal_answer": "The UIN is IRDAN144RP0002V02201617.",
+    "source": "SBI Home Insurance - Page 1 (repeated in the footer/header of every page)"
+  },
+  {
+    "id": "304",
+    "query": "What toll-free numbers should I call to report a loss under the Key Replacement section?",
+    "ideal_answer": "You should call 1800 22 1111 or 1800 102 1111, or provide written intimation within 24 hours of discovering the loss.",
+    "source": "SBI Home Insurance - Page 14, Section 10 - Key Replacement, Duties after an Accident or Loss"
+  },
+  {
+    "id": "305",
+    "query": "What email address should I use to escalate a grievance to the Home Insurance Grievance Redressal Officer (Stage 2)?",
+    "ideal_answer": "Stage 2 appeals should be sent to gro@sbigeneral.in, or you can contact 022-42412070.",
+    "source": "SBI Home Insurance - Page 18, Grievance Redressal Mechanism, Stage 2"
+  },
+  {
+    "id": "306",
+    "query": "If an insured peril damages my home and also causes my death, what personal accident compensation could apply, and how is that different from the Section 7 Personal Accident cover?",
+    "ideal_answer": "Two distinct benefits can apply. Under the Personal Accident Cover bundled with Section 1 (Fire and Allied Perils), if an insured peril that damages the Home Building and/or Home Contents also causes the death of the insured or their spouse, the policy pays a fixed Rs 5,00,000 per person, and this cover continues for the surviving spouse until policy expiry. Separately, if Section 7 - Personal Accident is opted, its Accidental Death benefit pays 100% of the Primary Member Sum Insured (or 50% for a dependent/unemployed family member) for death from any accident, anywhere in the world — independent of whether the accident also damaged the home.",
+    "source": "SBI Home Insurance - Page 6, Section 1 - Optional Covers (Personal Accident Cover) + Page 9, Section 7 - Personal Accident, Clause A.1 (Accidental Death)"
+  },
+  {
+    "id": "307",
+    "query": "If my 3-year-old laptop is damaged and I claim under the portable equipment cover, how much depreciation and deductible would apply?",
+    "ideal_answer": "For portable equipment aged up to 3 years, the age-based depreciation table applies a 50% depreciation rate. Separately, the claim is also subject to a deductible of 5% of the claim amount, subject to a minimum of Rs 1,000, specifically for portable equipment claims.",
+    "source": "SBI Home Insurance - Page 14, Section 9 - Special Conditions (Depreciation Table) + Page 13, Section 9(B)(1)(b) (Deductible)"
+  },
+  {
+    "id": "308",
+    "query": "Does underinsurance reduce my payout if I claim for home building damage, and is this treated the same as claims under other sections like Burglary & Theft?",
+    "ideal_answer": "No — underinsurance does not apply to Section 1 (Fire and Allied Perils). Even if the declared Sum Insured is less than the actual value at risk, this shortfall will not reduce the payout for a Home Building claim. However, for sections other than Section I (e.g., Burglary & Theft, Baggage, Breakdown of Appliances, Plate Glass, All Risks), if the Sum Insured at the time of the claim is less than 85% of the full value of the property, the payment is reduced by a rateable proportion of the loss, though liability is always capped at the Section Sum Insured.",
+    "source": "SBI Home Insurance - Page 18, 'Applicable to Section I' underinsurance clause + Page 17-18, Special Provisions (d) - underinsurance rule for other sections"
+  },
+  {
+    "id": "309",
+    "query": "If a riot damages my home and, separately, I get injured while participating in a motor race, would either event be covered under this policy?",
+    "ideal_answer": "These fall under different sections with opposite outcomes. Riot is a covered Insured Event under Section 1 (Fire and Allied Perils), so damage to the Home Building caused by riot would be covered, unless the damage resulted from dispossession/confiscation by government order or unlawful occupation of the home. However, any bodily injury sustained while engaging in a speed contest or racing of any kind (other than on foot) is listed as an exclusion under the Personal Accident section, so that injury would not be covered.",
+    "source": "SBI Home Insurance - Page 4-5, Section 1 - Insured Events table (Riot) + Page 11-12, Section 7(D)(17) (racing exclusion)"
+  },
+  {
+    "id": "310",
+    "query": "How much time do I generally have to report a loss and submit a claim, and is this different for my home's Key Replacement claim?",
+    "ideal_answer": "Under the general Claims Procedure applicable to all sections, notice must be given immediately upon discovering the loss, and the claim form must be submitted within 30 days of first noticing the loss or damage. For a Key Replacement claim under Section 10, the timeline is stricter: you must call the toll-free number or give written intimation within 24 hours of discovering the loss, may file a police report within 24 hours, and must return the completed claim form with supporting documents within 3 days of making the claim.",
+    "source": "SBI Home Insurance - Page 16, General Claims Procedure Clause IV + Page 14-15, Section 10 - Duties after an Accident or Loss"
+  },
+  {
+    "id": "401",
+    "query": "In the event my passport is lost overseas, within how many hours must I report the loss to the police for the claim to be valid?",
+    "ideal_answer": "The loss must be reported to the appropriate police authority within 24 hours of discovery, and an official report must be obtained; a claim not reported within this window is excluded.",
+    "source": "Travel Prime Policy - Page 5, Section 6 - Loss of Passport, Exclusions"
+  },
+  {
+    "id": "402",
+    "query": "How does Bajaj Allianz calculate the payout under the Hijack Cover section?",
+    "ideal_answer": "Under Section 8 - Hijack Cover, the Company pays up to the maximum sum specified in the schedule for each 24-hour period that the insured is detained by hijackers following the hijacking of an aircraft in which the insured is travelling.",
+    "source": "Travel Prime Policy - Page 5-6, Section 8 - Hijack Cover"
+  },
+  {
+    "id": "403",
+    "query": "What is the 24-hour emergency telephone number to notify Bajaj Allianz in case of overseas hospitalization?",
+    "ideal_answer": "The 24-hour telephone number is ++91-20-30305858.",
+    "source": "Travel Prime Policy - Page 13, General Condition 4 - Claims Procedures, Hospitalization"
+  },
+  {
+    "id": "404",
+    "query": "What fax number and email address should claim documents be sent to?",
+    "ideal_answer": "Claim documents should be sent by fax to +91-20-30512207, or scanned and emailed to travel@bajajallianz.co.in.",
+    "source": "Travel Prime Policy - Page 13-14, General Condition 4 - Claims Procedures"
+  },
+  {
+    "id": "405",
+    "query": "What is the issuing office address and IRDA registration number for this Travel Prime Policy?",
+    "ideal_answer": "The issuing office is G.E. Plaza, Airport Road, Yerawada, Pune - 411006, and the IRDA Registration Number is 113.",
+    "source": "Travel Prime Policy - Page 1, header"
+  },
+  {
+    "id": "406",
+    "query": "If a policyholder dies by suicide during an overseas trip, will their family receive any payout?",
+    "ideal_answer": "Generally no. The Company is under no liability to make payment under Medical Expenses, Medical Evacuation, Repatriation, or Personal Accident benefit for a claim arising from suicide, attempted suicide, or willfully self-inflicted injury, under the exclusions applicable to Sections 1, 2 & 3. However, if the optional Section 26 - Suicide add-on cover was purchased (available under Travel Prime Student plans) with an additional premium, a one-time payment as specified in the schedule becomes payable, subject to a 6-month waiting period from the date of departure from India (or from policy inception in case of co-renewal).",
+    "source": "Travel Prime Policy - Page 4, Exclusions applicable to Sections 1, 2 & 3, Clause 4 + Page 9, Section 26 - Suicide"
+  },
+  {
+    "id": "407",
+    "query": "Under what condition is a Missed Connection claim under Section 17 actually payable?",
+    "ideal_answer": "Under Section 17 - Missed Connection, if the insured's aircraft from India is delayed beyond 12 hours past its scheduled arrival time at the connecting destination, causing the insured to miss the connecting flight, the Company pays the sum mentioned in the schedule. It is a condition precedent to liability that the claim is also admissible under Section 9 - Trip Delay — meaning the delay must independently satisfy Trip Delay's own conditions, such as not being caused by the insured failing to check in correctly or by a known/anticipated strike.",
+    "source": "Travel Prime Policy - Page 8, Section 17 - Missed Connection + Page 6, Section 9 - Trip Delay"
+  },
+  {
+    "id": "408",
+    "query": "Does the policy's Contribution clause reduce my payout for every type of claim if I have another insurance policy covering the same loss?",
+    "ideal_answer": "Not for every claim. Under General Condition 15 (Contribution), if another insurance also covers the same loss, the Company will not pay or contribute more than its rateable proportion of the loss. However, this condition explicitly does not apply to certain fixed-benefit sections: Section 1 (Personal Accident), Section 8 (Hijack Cover), Section 10 (Hospitalization Daily Allowance), and Section 5 (Accidental Death and Disability - Common Carrier), which are paid in full regardless of other insurance.",
+    "source": "Travel Prime Policy - Page 20, General Condition 15 - Contribution"
+  },
+  {
+    "id": "409",
+    "query": "How many days do I have to notify Bajaj Allianz after a loss occurs, and does this window differ by the type of claim?",
+    "ideal_answer": "Yes, the notification window differs by section. For claims under Sections 1, 2, and 3 (Personal Accident, Medical Expenses & Medical Evacuation, and Repatriation), the insured or legal representative must notify the Insurance Company/Claims Administrator within 14 days from the date of loss. For all other claims, the insured must notify the Company immediately — within 7 days from the date of loss — and obtain the mandatory claim documentation forms.",
+    "source": "Travel Prime Policy - Page 14, General Condition 6 - Notifications of Claims, sub-clauses (a) and (b)"
+  },
+  {
+    "id": "410",
+    "query": "If my checked baggage is delayed and I already received a payout for that, and it's later confirmed permanently lost, does the Loss of Checked Baggage claim account for the earlier delay payment?",
+    "ideal_answer": "Yes. Under Section 4 (Loss of Checked Baggage), the Company's payment to the insured will be reduced by any payment already made under Section 14 (Delay of Checked Baggage), as well as by any sum for which the Airline is liable to pay. So if a delay payout was already received before the baggage was confirmed permanently lost, that amount is deducted from the final Section 4 settlement.",
+    "source": "Travel Prime Policy - Page 5, Section 4 - Loss of Checked Baggage, Clause 4(i) + Page 6, Section 14 - Delay of Checked Baggage"
+  },
+  {
+    "id": "501",
+    "query": "What depreciation rate applies to a car's rubber, nylon, plastic parts, tyres, tubes, batteries and air bags when they are replaced under a partial loss claim?",
+    "ideal_answer": "A 50% depreciation deduction applies to all rubber/nylon/plastic parts, tyres and tubes, batteries and air bags when such parts are replaced.",
+    "source": "ICICI Car Policy - Page 1, Section I(B), Depreciation clause I"
+  },
+  {
+    "id": "502",
+    "query": "What is ICICI Lombard's toll-free number for claim intimation?",
+    "ideal_answer": "Claims can be intimated via the toll-free number 1800 2666 (also usable for the IL TakeCare App route, WhatsApp 'Hi' to RIA at 7738282666, email customersupport@icicilombard.com, or the website).",
+    "source": "ICICI Car Policy - Page 19-20, Chapter 6, Claim Procedure, Claim Intimation"
+  },
+  {
+    "id": "503",
+    "query": "What is the minimum Sum Insured for the Personal Accident Cover for Owner-Driver under Section III in ICICI Lombard car policy?",
+    "ideal_answer": "The total liability of the insurer shall not exceed the sum insured, being a minimum of ₹15,00,000, or such higher amount as opted by the insured upon payment of additional premium as mentioned in the policy schedule.",
+    "source": "ICICI Car Policy - Page 3, Section III, Personal Accident Cover for Owner-Driver"
+  },
+  {
+    "id": "504",
+    "query": "At what threshold is my car vehicle declared a Constructive Total Loss, and if that happens, does the base policy or the Return to Invoice add-on pay more?",
+    "ideal_answer": "The vehicle is treated as a Constructive Total Loss if the aggregate cost of retrieval and/or repair exceeds 75% of the IDV. Under the base policy (Condition 3.III(a)), the Company's liability for Total Loss/CTL/Cash Loss is capped at the IDV of the vehicle (including accessories) as specified in the schedule, less the value of the wreck if opted by the customer. If the Return to Invoice add-on is opted, the Company additionally pays the Sum Insured under the add-on, calculated as the difference between the IDV and the total actual expenses incurred to acquire a new vehicle of similar make/model per the manufacturer's/dealer's on-road price — so Return to Invoice pays more than the base IDV-only settlement whenever the on-road price of a replacement exceeds the IDV.",
+    "source": "ICICI Car Policy - Page 2, Section I.3 (CTL definition) + Page 4, Chapter 2, Condition 3.III(a) + Page 21, Chapter 7.5 Return to Invoice"
+  },
+  {
+    "id": "505",
+    "query": "Under the standard No Claim Bonus table, what NCB applies after 4 consecutive claim-free years, and how does that compare to what NCB Protect (Plan 2) gives if the insured has 4-or-more prior claim-free years but makes 2 claims in the current policy period?",
+    "ideal_answer": "Under the standard NCB table, no claim made or pending during the preceding 4 consecutive years of insurance earns a 45% discount on Own Damage premium. Under the NCB Protect add-on, Plan 2 (Two Step Down), for a policyholder with 4-and-above prior claim-free years who lodges 2 claims (XX=2) in the current policy period, the NCB Benefit table gives 25% — lower than the 45% they would have retained claim-free, but the add-on still preserves a bonus that would normally be forfeited to 0% after multiple claims without protection.",
+    "source": "ICICI Car Policy - Page 5, Chapter 2, Condition 4 (No Claim Bonus table) + Page 21, Chapter 7.4 NCB Protect, Plan 2 table"
+  },
+  {
+    "id": "506",
+    "query": "Does the base car policy exclude losses caused by war or invasion, and is there an add-on that restores this cover?",
+    "ideal_answer": "Yes. General Exception VI excludes any accidental loss, damage and/or liability occasioned by, contributed to, or arising from war, invasion, act of foreign enemies, hostilities or warlike operations, civil war, mutiny, rebellion, or military/usurped power, unless the insured proves the loss arose independently of these events. The War Risk Cover add-on can be opted for an additional premium to indemnify the insured vehicle against exactly these perils (subject to liability not exceeding the vehicle's IDV and other conditions/exclusions such as nuclear weapons use). The add-on explicitly states that when opted, the corresponding exclusion in the base policy 'stands deleted.'",
+    "source": "ICICI Car Policy - Page 3, Chapter 2.1, General Exception VI + Page 40-41, Chapter 7.19 War Risk Cover"
+  },
+  {
+    "id": "507",
+    "query": "What is the maximum amount the Company will pay for towing a car disabled vehicle to the nearest repairer and redelivering it?",
+    "ideal_answer": "The Company will bear the reasonable cost of protection, removal to the nearest repairer, and redelivery to the insured, but not exceeding ₹1500 in respect of any one accident.",
+    "source": "ICICI Car Policy - Page 2, Section I (A)/(B)"
+  },
+  {
+    "id": "508",
+    "query": "What compulsory deductible applies to a private car with an engine over 1500cc, and how does opting a ₹5000 voluntary deductible change my premium and out-of-pocket liability?",
+    "ideal_answer": "Per the Customer Information Sheet, the compulsory deductible for private cars/three-wheelers with engines over 1500cc (or EVs above 65KW) is ₹2000. Under IMT.22 (Compulsory Deductible), if the insured additionally opts a voluntary deductible, the aggregate of the compulsory and voluntary deductibles is what the insured bears for each and every event under Section I. For a ₹5000 voluntary deductible specifically, the CIS deductible discount table shows a 25% discount on the Own Damage premium, equating to a ₹1500 premium reduction.",
+    "source": "ICICI Car Policy - Page 10, Chapter 3, IMT.22 + Page 48, Annexure B, CIS Sl No. 8 (Loss Participation)"
+  },
+  {
+    "id": "509",
+    "query": "What discount on Own Damage premium applies under IMT.12 for a vehicle specially designed for blind, handicapped, or mentally challenged persons?",
+    "ideal_answer": "A discount of 50% on the Own Damage premium for the vehicle insured is allowed, provided the vehicle is specially designed/modified for use by blind, handicapped and mentally challenged persons and a suitable endorsement has been made in the Registration Book by the Registering Authority.",
+    "source": "ICICI Car Policy - Page 7, Chapter 3, IMT.12"
+  },
+  {
+    "id": "510",
+    "query": "Under the base policy, what depreciation applies to car's fibre glass components when replaced, and how does the Zero Depreciation add-on change that under ICICI Lombard policy?",
+    "ideal_answer": "Under the base policy's depreciation schedule, fibre glass components are depreciated at 30% when replaced. If the Zero Depreciation add-on is opted, the Company deducts no amount for depreciation on parts replaced due to a covered peril under Section I — except this add-on does not apply to Total Loss/Constructive Total Loss/Cash Loss claims, the insured still bears any Voluntary Deductible opted for the add-on per claim, and it does not cover minor scratches, paint fading, or wear-and-tear touch-up/routine maintenance.",
+    "source": "ICICI Car Policy - Page 1, Section I(B), Depreciation clause II + Page 20, Chapter 7.1 Zero Depreciation"
+  }
+]

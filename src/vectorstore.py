@@ -22,7 +22,7 @@ class ChromaVectorStore:
     def build_from_chunks(self, chunks: List[Any], embeddings):
         logger.info(f"Building vector store from {len(chunks)} chunks...")
 
-        self.collection = self.client.get_or_create_collection(name="documents")
+        self.collection = self.client.get_or_create_collection(name="policy_documents")
 
         texts = [chunk.page_content for chunk in chunks]
         metadatas = [chunk.metadata for chunk in chunks]
@@ -36,7 +36,7 @@ class ChromaVectorStore:
     def collection_exists(self) -> bool:
         """Check whether the collection has already been built"""
         try:
-            self.client.get_collection(name="documents")
+            self.client.get_collection(name="policy_documents")
             return True
         except Exception:
             return False
@@ -49,7 +49,7 @@ class ChromaVectorStore:
         return data["ids"], data["documents"], data["metadatas"]
 
     def load(self):
-        self.collection = self.client.get_collection(name="documents")
+        self.collection = self.client.get_collection(name="policy_documents")
         logger.info(f"Loaded ChromaDB collection with {self.collection.count()} documents")
 
     def query(self, query_embedding, top_k: int = 5):
@@ -69,27 +69,3 @@ class ChromaVectorStore:
             })
 
         return formatted_results
-
-if __name__ == "__main__":
-    from src.data_loader import load_all_documents
-    from src.chunking import RecursiveChunker
-    from src.embeddings import EmbeddingModel
-
-    docs, failures = load_all_documents("data")
-    chunker = RecursiveChunker()
-    chunks = chunker.chunk_documents(docs)
-
-    embedder = EmbeddingModel()
-    embeddings = embedder.embed_chunks(chunks)
-
-    store = ChromaVectorStore("chroma_db")
-    store.build_from_chunks(chunks, embeddings)
-
-    store.load()
-
-    query = "What is Self-attention mechanism?"
-    query_embedding = embedder.embed_query(query)
-
-    results = store.query(query_embedding, top_k=3)
-
-    print(results)

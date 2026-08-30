@@ -24,14 +24,3 @@ class RecursiveChunker:
 
         logger.info(f"Split {len(documents)} documents into {len(chunks)} chunks (size={self.chunk_size}, overlap={self.chunk_overlap})")
         return chunks
-
-
-if __name__ == "__main__":
-    logging.basicConfig(level=logging.INFO, format="%(levelname)s %(name)s: %(message)s")
-    from src.data_loader import load_all_documents
-
-    docs, failures = load_all_documents("data")
-    chunks = RecursiveChunker().chunk_documents(docs)
-    print(f"Produced {len(chunks)} chunks.")
-    if chunks:
-        print("Example chunk metadata:", chunks[0].metadata)

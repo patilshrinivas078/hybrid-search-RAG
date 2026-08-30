@@ -1,0 +1,226 @@
+[
+    {
+        "id": "f001",
+        "query": "What perils does Section I of the Auto Secure Two Wheeler policy cover for loss or damage to the insured vehicle?",
+        "ideal_context": [
+            "Cleaned policy document | Page 1\nAUTO SECURE TWO WHEELER PACKAGE POLICY\nUIN: IRDAN108RPMT0076V03201819\nTATA AIG General Insurance Co. Ltd.\n[SOURCE PAGE: 1]\nAUTO SECURE TWO WHEELER PACKAGE POLICY UIN: IRDAN108RPMT0076V03201819\nPOLICY WORDINGS\nTATA AIG General Insurance Co. Ltd. Registered Office: Peninsula Business Park, Tower A, 15th Floor, G.K. Marg, Lower\nParel, Mumbai – 400013 24x7 Toll Free No: 1800 266 7780 Email: customersupport@tataaig.com Website:\nwww.tataaig.com IRDA of India Registration No: 108\nCIN: U85110MH2000PLC128425\n[SOURCE PAGE: 2]\nWhereas the Insured by a proposal and declaration dated as stated in the Schedule which shall be the basis of this contract\nand is deemed to be incorporated herein has applied to TATA AIG GENERAL INSURANCE COMPANY LTD. (hereinafter\ncalled the Company) for Insurance hereinafter contained and has paid the premium mentioned in the Schedule as",
+            "called the Company) for Insurance hereinafter contained and has paid the premium mentioned in the Schedule as\nconsideration for such Insurance in respect of accident loss or damage occurring during the Period of Insurance.\n(The term two wheeler referred to in this Policy will include motor cycle / scooter / auto cycle or any other motorised two\nwheeled vehicle mentioned in the Schedule).\nNow This Policy Witnesseth:\nThat subject to the Terms Exceptions and Conditions contained herein or endorsed or otherwise expressed hereon;\nSection I: Loss of or Damage to the Vehicle Insured\n1. The Company will indemnify the Insured against loss or damage to the vehicle insured hereunder and/or its accessories\nwhilst thereon\nI. by fire explosion self-ignition or lightning;\nII. by burglary housebreaking or theft;\nIII. by riot and strike;\nIV. by earthquake (Fire and Shock Damage);\nV. by flood typhoon hurricane storm tempest inundation cyclone hailstorm frost;\nVI. by accidental external means;"
+        ],
+        "source_chunks": [
+            "auto_secure_two_wheeler_policy_cleaned.pdf::8892dc683372",
+            "auto_secure_two_wheeler_policy_cleaned.pdf::3468de2a11a2"
+        ],
+        "source_document": "auto_secure_two_wheeler_policy_cleaned.pdf"
+    },
+    {
+        "id": "f002",
+        "query": "By what percentage is IDV reduced for a two-wheeler that is more than 3 years but not more than 4 years old?",
+        "ideal_context": [
+            "Exceeding 6 months but not exceeding 1 year | 15%\nExceeding 1 year but not exceeding 2 years | 20%\nExceeding 2 years but not exceeding 3 years | 30%\nExceeding 3 years but not exceeding 4 years | 40%\nExceeding 4 years but not exceeding 5 years | 50%\nIDV of vehicles beyond 5 years of age and of obsolete models of vehicles (i.e. models which the manufacturers have\ndiscontinued to manufacture) is to be determined on the basis of an understanding between the insurer and the insured."
+        ],
+        "source_chunks": [
+            "auto_secure_two_wheeler_policy_cleaned.pdf::4f61729e8b47"
+        ],
+        "source_document": "auto_secure_two_wheeler_policy_cleaned.pdf"
+    },
+    {
+        "id": "f003",
+        "query": "Under what conditions can the insured cancel the two-wheeler policy, and what refund are they entitled to?",
+        "ideal_context": [
+            "Cleaned policy document | Page 6\n4. Cancellation\nI. Cancellation by Insurer\nThe Company may cancel the policy on the grounds of established fraud, subject to clause III mentioned under this section,\nby sending seven days notice by recorded delivery to the insured at insured’s last known address and in which case the\npolicy will be cancelled ‘ab-initio’ with forfeiture of premium and non-consideration of claim, if any.\nII. Cancellation by Insured\nThe policy may be cancelled at any time by the insured without assigning any reason\nprovided no claim has arisen during the period of insurance. , The insured shall be entitled to a refund of proportionate\npremium for the unexpired period in the running year and full refund of premium for remaining full policy years (where period\nof insurance exceeds one year) subject to submission of proof that vehicle is insured elsewhere at least for Liability Only\ncover and original certificate of insurance."
+        ],
+        "source_chunks": [
+            "auto_secure_two_wheeler_policy_cleaned.pdf::a62957ad3bec"
+        ],
+        "source_document": "auto_secure_two_wheeler_policy_cleaned.pdf"
+    },
+    {
+        "id": "f004",
+        "query": "What No Claim Bonus percentage applies if no claim was made or pending during the preceding 5 consecutive years of insurance on the two-wheeler policy?",
+        "ideal_context": [
+            "No claim made or pending during the preceding 5 consecutive years of insurance 1. The entitlement of NC | 50% B shall follow\nthe\n[SOURCE PAGE: 9]\nfortune of the original insured and not the vehicle or the policy. In the event of transfer of interest in the policy from one\ninsured to another, the entitlement of NCB for the transferee will be as per transferee’s eligibility for Private Car policy\nfollowing the transfer of interest.\n2. Where the insured is an individual, and on his/ her death the custody and use of the vehicle pass to his/her spouse and/\nor children and/or parents, the NCB entitlement of the original insured will pass on to such person/s to whom the custody\nand use of the vehicle passes.\n3. The percentage of NCB earned on a vehicle owned by an institution during the period when it was allotted to and\nexclusively operated by an employee shall be passed on to the employee if the ownership of the vehicle is transferred in the"
+        ],
+        "source_chunks": [
+            "auto_secure_two_wheeler_policy_cleaned.pdf::09f8dbf2aee1"
+        ],
+        "source_document": "auto_secure_two_wheeler_policy_cleaned.pdf"
+    },
+    {
+        "id": "f005",
+        "query": "What discount does IMT13 provide, and where does the policy say it will not cover the insured vehicle?",
+        "ideal_context": [
+            "50% on the Own Damage premium for the vehicle insured is hereby allowed to the insured.\nSubject otherwise to the terms exceptions conditions and limitations of the policy.\nIMT13 .USE OF VEHICLE WITHIN INSURED’S OWN PREMISES\nIt is hereby understood and agreed that the insurer shall not be liable in respect of the vehicle insured while the vehicle is\nbeing used elsewhere than in the insured’s premises except where the vehicle is specifically required for a mission to fight a\nfire."
+        ],
+        "source_chunks": [
+            "auto_secure_two_wheeler_policy_cleaned.pdf::a5f1df1663e3"
+        ],
+        "source_document": "auto_secure_two_wheeler_policy_cleaned.pdf"
+    },
+    {
+        "id": "f006",
+        "query": "What is the maximum period for which the SBI home insurance policy covers loss of rent if the home is unfit for living, and what proof must be submitted?",
+        "ideal_context": [
+            "make it fit for living. The maximum period of this cover is three years from the date Your Home Building becomes unfit for\nliving. You must submit a certificate from an architect or the local authority to show that Your Home Building is not fit for\nliving. e. Claim for loss of rent will be accepted only if We have accepted Your claim for loss for physical damage to Your\nHome under the Home Building Cover. 1. What We cover: We cover the physical loss or damage to or destruction of the\nGeneral Contents of Your Home caused by an Insured Event as listed in Clause B of this Policy. Valuable Contents of Your\nHome are not covered under this Policy unless You have purchased the optional cover for the Valuable Contents. 2. Sum\nInsured: a. The Sum Insured for the Home Contents Cover is shown in the Policy Schedule and will be the maximum\namount payable in the event the Home Contents are destroyed/lost completely. b. The policy has a built-in cover for the"
+        ],
+        "source_chunks": [
+            "home_insurance_plain_rag.pdf::ecab8c3d8f2c"
+        ],
+        "source_document": "home_insurance_plain_rag.pdf"
+    },
+    {
+        "id": "f007",
+        "query": "What does the Jewellery & Valuables section of the home insurance policy cover for newly purchased jewellery bought after the policy started?",
+        "ideal_context": [
+            "JEWELLERY & VALUABLES A. What We Cover We will indemnify You and/or Your Family against the loss of, destruction\nof, or damage to a. Portable equipments anywhere in the world due to any unforeseen and sudden physical loss (except a\ncause mentioned in section “What we will not cover”), provided that it is in Your personal custody provided that Our liability\nin respect of any one item of such property in any one Period of Insurance will not individually or in aggregate exceed the\nsub limit of the Sum Insured set against such item in the Schedule. b. You and/or Your Family’s Jewellery and Valuables\nanywhere in the world due to Accident and/or misfortune, based upon the actual Replacement Cost of such Jewellery and\nValuables not exceeding Section Sum Insured. c. Newly purchased Jewellery and Valuables i.e. purchased after\ncommencement of the Policy subject to maximum payment of 10% of Section Sum Insured or Rs 100,000 whichever is\nless duly supported by original purchase invoice/bill."
+        ],
+        "source_chunks": [
+            "home_insurance_plain_rag.pdf::d36da876858d"
+        ],
+        "source_document": "home_insurance_plain_rag.pdf"
+    },
+    {
+        "id": "f008",
+        "query": "What does the Lock Out Reimbursement benefit in the home insurance policy cover, and what does it explicitly exclude?",
+        "ideal_context": [
+            "costs include the labour cost for replacing the lock. Lock out Reimbursement- We will reimburse You for the cost of\nobtaining keys from a locksmith if You are locked out of Your Home or Your Vehicle due to loss or Theft of Your keys. B.\nWhat We NOT Cover We will not pay for: a. Costs other than those listed in the “What We Cover” section b. Cost\nassociated with Lost or Stolen keys for a Home other than Your primary Home. c. The cost to replace keys to Vehicles that\nYou do not own for personal use. C. Special Condition For Break in protection claims, You must provide an official police\nreport that indicates the incident happened within the covered time frame in order for Us to pay the claim unless You are\nlegally incapable of doing so. Excess of other Insurance Coverage (Applicable to Section- Key Replacement cover)\nCoverage provided by this Policy are EXCESS, this means that if, at the time of occurrence, You have other valid and"
+        ],
+        "source_chunks": [
+            "home_insurance_plain_rag.pdf::0983f3f53023"
+        ],
+        "source_document": "home_insurance_plain_rag.pdf"
+    },
+    {
+        "id": "f009",
+        "query": "What grace period is allowed for renewing the Personal Accident section of the home insurance policy, and what happens to coverage during a period for which no premium is received?",
+        "ideal_context": [
+            "Under normal circumstances, renewal will not be refused except on the grounds of moral hazard, misrepresentation, or\nfraud of the Insured. The renewal premium shall be as per the rates approved by IRDA on the date of renewal of this\nproduct. A grace period of 30 days is allowed for renewal of Personal Accident Section of this Policy. This will be counted\nfrom the day immediately following the premium due date during which a payment can be made to renew or continue this\npolicy in force without loss of continuity benefits such as cumulative bonus. The continuity of coverage for all the covers\nunder the expiring Policy will be subject to receiving appropriate premium for the same. Coverage is not available for the\nperiod for which no premium is received, and Insurer has no liability for the claims arising during this period. III.\nCancellation and Termination of Policy 1. Cancellation by Insured a. Insured can cancel this Policy at any time during the"
+        ],
+        "source_chunks": [
+            "home_insurance_plain_rag.pdf::c991b6ebf916"
+        ],
+        "source_document": "home_insurance_plain_rag.pdf"
+    },
+    {
+        "id": "f010",
+        "query": "When does the home insurance policy automatically end due to destruction of the home building, and can the insured apply to continue cover?",
+        "ideal_context": [
+            "automatically end in the following cases: a. Destruction of Your Home Building: This Policy will automatically end 7 (seven)\ndays after Your Home Building collapses or is destroyed by reason other than any Insured Event. If a separable part of\nYour Home Building, or any additional structure falls down or is destroyed by reason other than any Insured Event, the\ncovers will end for such part or additional structure. You can apply within 7 (seven) days of such fall or destruction for\ncontinuing insurance cover. We may agree, but will not be bound, to continue the cover on the same rates, terms and\nconditions. b. Exhaustion of Sum Insured: If Your Home Building, or any additional structure, or any item of Home\nContents, is lost, destroyed or stolen, or is a Total Loss, and We pay You the full Sum Insured for such item, the insurance\ncover for that item will automatically end unless the subject matter of insurance is reconstructed and the Sum Insured is"
+        ],
+        "source_chunks": [
+            "home_insurance_plain_rag.pdf::03c1a47db6ed"
+        ],
+        "source_document": "home_insurance_plain_rag.pdf"
+    },
+    {
+        "id": "f011",
+        "query": "What rate of depreciation applies to rubber, nylon and plastic parts, tyres and tubes, batteries, and air bags under the private car policy's claim settlement terms?",
+        "ideal_context": [
+            "I. For all rubber/nylon/plastic parts, tyres and tubes, batteries and air bags-50%\nII. For fibre glass components-30%\nIII. For all parts made of glass-Nil\nIV. Rate of depreciation for all other parts including wooden parts will be as per the following schedule.\nTABLE\nAGE OF THE VEHICLE | % OF DEPRECIATION"
+        ],
+        "source_chunks": [
+            "ICICI Limbard private_car_policy_plain_rag.pdf::f3b6d0562cda"
+        ],
+        "source_document": "ICICI Limbard private_car_policy_plain_rag.pdf"
+    },
+    {
+        "id": "f012",
+        "query": "What No Claim Bonus discount on Own Damage premium applies if no claim was made or pending during the preceding 3 consecutive years of insurance on the private car policy?",
+        "ideal_context": [
+            "4. NO CLAIM BONUS :\nNo Claim Bonus, wherever applicable, will be as per the following table\nTABLE\nALL TYPES OF VEHICLES | % OF DISCOUNT ON OWN DAMAGE PREMIUM\nNo claim made or pending during the preceding full year of insurance | 20%\nNo claim made or pending during the preceding 2 consecutive years of insurance | 25%\nNo claim made or pending during the preceding 3 consecutive years of insurance | 35%\nNo claim made or pending during the preceding 4 consecutive years of insurance | 45%\nNo claim made or pending during the preceding 5 consecutive years of insurance | 50%\nSunset Clause : If at the renewal falling due any time between 1st July 2002 and 30th June 2003, both days inclusive,\n(after completion of the full policy period of 12 months) an insured becomes entitled to an NCB of 55% or 65% in terms\nof the Tariff prevailing prior to 1st July 2002, the entitlement of such higher percentage of NCB will remain protected for"
+        ],
+        "source_chunks": [
+            "ICICI Limbard private_car_policy_plain_rag.pdf::f994ac3065e9"
+        ],
+        "source_document": "ICICI Limbard private_car_policy_plain_rag.pdf"
+    },
+    {
+        "id": "f013",
+        "query": "What condition must the insured maintain to benefit from the Anti-Theft device premium discount endorsement in the private car policy?",
+        "ideal_context": [
+            "(A))\nIn consideration of certification by___* that an Anti-Theft device approved by Automobile Research Association of India\n(ARAI), Pune has been installed in the vehicle insured herein a premium discount of `_____**is hereby allowed to the\ninsured.\nIt is hereby understood and agreed that the insured shall ensure at all times that this Anti-theft device installed in the\nvehicle\n[SOURCE PAGE: 7]\ninsured is maintained in efficient condition till the expiry of this policy. Subject otherwise to the terms, exceptions,\nconditions and limitations of the policy\n* The name of the certifying Automobile Association is to be inserted.\n** Premium discount calculated as per tariff provision is to be inserted. For mid-term certification of installation of Anti\nTheft device pro-rata proportion of tariff discount for the unexpired period is to be inserted.\n11. VEHICLES LAID UP\nA. IMT. 11. A. VEHICLES LAID UP (Lay up period declared)"
+        ],
+        "source_chunks": [
+            "ICICI Limbard private_car_policy_plain_rag.pdf::f9b0493a7d89"
+        ],
+        "source_document": "ICICI Limbard private_car_policy_plain_rag.pdf"
+    },
+    {
+        "id": "f014",
+        "query": "Under IMT.21 Special Exclusions for commercial vehicles, which vehicle parts are excluded from Section I coverage except in case of total loss?",
+        "ideal_context": [
+            "*To insert ` 50 for Two wheelers, ` 100 for private cars ` 150 for Commercial Vehicles. three wheelers and taxis or `\n200 for Commercial Vehicles (excluding three wheelers and taxis).\n21. IMT. 21. SPECIAL EXCLUSIONS AND COMPULSORY DEDUCTIBLE (Applicable to all Commercial Vehicles excluding\ntaxis and motorized two wheelers carrying passengers for hire or reward.)\nNotwithstanding anything to the contrary contained herein it is hereby understood and agreed that\nI. Special Exclusions\nExcept in the case of Total Loss of the vehicle insured, the insurer shall not be liable under Section I of the policy for\nloss of or damage to lamps tyres tubes mudguards bonnet side parts bumpers and paint work.\nII. Compulsory Deductible\nIn addition to any amount which the insured may be required to bear under para (a) above the insured shall also bear\nunder section I of the policy in respect of each and every event (including event giving rise to total loss/Cash"
+        ],
+        "source_chunks": [
+            "ICICI Limbard private_car_policy_plain_rag.pdf::a1ba9cbf6f9c"
+        ],
+        "source_document": "ICICI Limbard private_car_policy_plain_rag.pdf"
+    },
+    {
+        "id": "f015",
+        "query": "What does the private car policy say about the insured's obligation to repay the Company, and how are limits of indemnity applied when an accident involves more than one indemnified person?",
+        "ideal_context": [
+            "But the insured shall repay to the Company all sums paid by the Company which the Company would not have been\nliable to pay but for the said provisions.\n3. APPLICATION OF LIMITS OF INDEMNITY\nI n the event of any accident involving indemnity to more than one person any limitation by the terms of this Policy\nand/or of any Endorsement thereon of the amount of any indemnity shall apply to the aggregate amount of indemnity\nto all persons indemnified and such indemnity shall apply in priority to the insured.\nSection III - PERSONAL ACCIDENT COVER FOR OWNER- DRIVER\nThe Company undertakes to pay compensation as per the following scale for bodily injury/death sustained by the\nowner- driver of the vehicle, in direct connection with the vehicle insured or whilst driving or mounting\ninto/dismounting from the vehicle insured or whilst traveling in it as a co-driver, caused by violent accidental external"
+        ],
+        "source_chunks": [
+            "ICICI Limbard private_car_policy_plain_rag.pdf::4f2c512b07ca"
+        ],
+        "source_document": "ICICI Limbard private_car_policy_plain_rag.pdf"
+    },
+    {
+        "id": "f016",
+        "query": "Under the Travel Prime Policy's Trip Delay section, how much delay triggers payment, and what situations does the company exclude from payment?",
+        "ideal_context": [
+            "India or travel to Republic of India, is delayed beyond 12 hours than the original scheduled departure time, the Company will pay\nthe sum mentioned in the schedule for every 12 hours delay in excess of 12 hours, subject to the maximum amount mentioned\nin the schedule. Company shall indemnify only one event of Trip Delay during the policy period. However, the Company will not\npay,\n 1. For any departure which is delayed as a result of the insured or any other person who have arranged to travel with failing to\n check-in\ncorrectly as required by the airline.\n 2. For any delayed departure caused by strike or industrial action known to exist or was anticipated at the time the trip was\n booked\n 3. If the aircraft is taken out of service on the instructions of the Civil Aviation Authority or other competent statutory authority\n except\ndue to bad weather conditions."
+        ],
+        "source_chunks": [
+            "TRAVEL_PRIME_POLICY.pdf::41dda97fc850"
+        ],
+        "source_document": "TRAVEL_PRIME_POLICY.pdf"
+    },
+    {
+        "id": "f017",
+        "query": "What steps must an insured follow after a theft or burglary of luggage or money under the Travel Prime Policy's emergency cash advance section?",
+        "ideal_context": [
+            "following conditions:\n 1. As soon as the theft/burglary of luggage/money occurs, insured should first register FIR with the local police authority\n \n2 . Insured person may then intimate The Company itself or through Claims Administrator of the Company on Email or contact\non telephone number indicated in the policy schedule.\n 3. The company shall verify the details of the insured and ascertain the amount of cash required and admissible under this\n section\n 4. The company will arrange for cash payments to the insured through a variety of sources, including but not limited to credit\n cards,\nhotels, banks, consulates and Western Union. Credit Card T ransactions performed by The Company are subjected to the\nconfirmed Credit."
+        ],
+        "source_chunks": [
+            "TRAVEL_PRIME_POLICY.pdf::3899dbcf5bfb"
+        ],
+        "source_document": "TRAVEL_PRIME_POLICY.pdf"
+    },
+    {
+        "id": "f018",
+        "query": "What does Section 22, Loss of Laptop, cover in the Travel Prime Policy, and what example of a non-payable bail claim is listed nearby?",
+        "ideal_context": [
+            " 2. for any bail amount where the insured has been charged for over speeding in a vehicle.\n \nSection 22 – Loss of Laptop\nSubject to all other terms and conditions, if the Insured incurs a loss due to Theft of his/her laptop during the journey abroad and\nwithin the Policy Period, the Company will indemnify the Insured for the loss due to Theft, subject to the Claim Settlement\nCriteria mentioned below. However, the Company will not pay for any:"
+        ],
+        "source_chunks": [
+            "TRAVEL_PRIME_POLICY.pdf::53c9190ec868"
+        ],
+        "source_document": "TRAVEL_PRIME_POLICY.pdf"
+    },
+    {
+        "id": "f019",
+        "query": "How does the Travel Prime Policy define a co-payment, and does a co-payment reduce the Sum Insured?",
+        "ideal_context": [
+            "benefit basis.\n 13. Co-Payment- A co-payment is a cost-sharing requirement under a health insurance policy that provides that the\n policyholder/insured\nwill bear a specified percentage of the admissible claim amount. A co-payment does not reduce the Sum Insured.\n 14. “Damages” means monetary sums payable pursuant to judgements or awards but shall not include fines, penalties,\n punitive damages,\nexemplary damages, any non-pecuniary relief, or any other amount for which an Insured is not financially liable, or which is\nwithout legal recourse to the Insured, or any matter that may be deemed to be uninsurable under Indian Law.\n 15. Day care centre- A day care centre means any institution established for day care treatment of illness and / or injuries or a\n medical\nset -u p within a hospital and which has been registered with the local authorities, wherever applicable, and is under the"
+        ],
+        "source_chunks": [
+            "TRAVEL_PRIME_POLICY.pdf::a1b69470014b"
+        ],
+        "source_document": "TRAVEL_PRIME_POLICY.pdf"
+    },
+    {
+        "id": "f020",
+        "query": "What criteria must a Day Care Centre meet under the Travel Prime Policy, and how does the policy distinguish Day Care Treatment from outpatient treatment?",
+        "ideal_context": [
+            "benefit basis.\n 13. Co-Payment- A co-payment is a cost-sharing requirement under a health insurance policy that provides that the\n policyholder/insured\nwill bear a specified percentage of the admissible claim amount. A co-payment does not reduce the Sum Insured.\n 14. “Damages” means monetary sums payable pursuant to judgements or awards but shall not include fines, penalties,\n punitive damages,\nexemplary damages, any non-pecuniary relief, or any other amount for which an Insured is not financially liable, or which is\nwithout legal recourse to the Insured, or any matter that may be deemed to be uninsurable under Indian Law.\n 15. Day care centre- A day care centre means any institution established for day care treatment of illness and / or injuries or a\n medical\nset -u p within a hospital and which has been registered with the local authorities, wherever applicable, and is under the",
+            "medical\nset -u p within a hospital and which has been registered with the local authorities, wherever applicable, and is under the\nsupervision of a registered and qualified medical practitioner AND must comply with all minimum criteria as under:- has qualified\nnursing staff under its employment has qualified medical practitioner (s) in charge has a fully equipped operation theatre of its\nown where surgical procedures are carried out- maintains daily records of patients and will make these accessible to the\nInsurance company’s authorized personnel.\n 16. Day Care T reatment- Day care treatment refers to medical treatment, and/or surgical procedure which is: i. undertaken\n under General\nor Local Anesthesia in a hospital/day care centre in less than 24 hrs because of technological advancement, and ii. Which would\nhave otherwise required a hospitalization of more than 24 hours. T reatment normally taken on an out-patient basis is not"
+        ],
+        "source_chunks": [
+            "TRAVEL_PRIME_POLICY.pdf::a1b69470014b",
+            "TRAVEL_PRIME_POLICY.pdf::1e85b2f62b33"
+        ],
+        "source_document": "TRAVEL_PRIME_POLICY.pdf"
+    }
+]
