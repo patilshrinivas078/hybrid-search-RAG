@@ -22,7 +22,6 @@ Combines **Dense Vector Search** (ChromaDB + Nomic Embed) with **Sparse Lexical 
 - **Interactive Interfaces**:
   - **Streamlit Web Application**: Chat interface with fixed viewport input and document upload interface.
   - **CLI Interactive Shell**: Command-line interface for rapid testing and batch indexing.
-
 ---
 
 ## Architecture & Pipeline Flow
