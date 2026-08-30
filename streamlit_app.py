@@ -6,16 +6,8 @@ Two pages, selected from a sidebar (not st.tabs - see note below):
   - Upload Documents: adds a new PDF/TXT/DOCX permanently to the knowledge
                        base via HybridRAGSearch.add_document()
 
-Sidebar navigation instead of tabs is deliberate: st.chat_input() only
-pins reliably to the bottom of the viewport when it's a direct element in
-the main app body. Nested inside st.tabs() (a container), it loses that
-fixed positioning and renders inline wherever it falls in the tab's
-content instead - shifting position as messages are added above it. Using
-the sidebar to switch pages keeps chat_input as a top-level element in the
-main body, so it stays anchored correctly.
-
 Model loading (embedder, reranker, vectorstore) happens once via
-st.cache_resource, not on every rerun - Streamlit reruns this whole script
+st.cache_resource, not on every rerun. Streamlit reruns this whole script
 on every interaction, so without caching you'd reload the reranker on every
 click.
 

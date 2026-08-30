@@ -14,10 +14,8 @@ def handle_query(retriever, query: str, top_k: int = 4) -> str:
     texts = [result["text"] for result in results if result.get("text")]
     answer = generate(query, texts)
 
-    # Set the trace-level input/output so the Langfuse dashboard shows the
-    # question -> final answer directly on the trace, not just on a nested
-    # span. Everything retrieve() and generate() log internally nests
-    # under this same trace automatically since they're called from here.
+    # Set the trace-level input/output so the Langfuse dashboard shows the question -> final answer directly on the trace, not just on a nested span. 
+    # Everything retrieve() and generate() log internally nests under this same trace automatically since they're called from here.
     get_client().update_current_span(
         input=query,
         output=answer,
