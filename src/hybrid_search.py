@@ -11,12 +11,12 @@ from src.sparse_search import BM25Search
 RRF_K = 60
 
 class HybridRAGSearch:
-    def __init__(self, persist_dir: str = "chroma_db", data_dir: str = "data", embedding_model: str = "nomic-ai/nomic-embed-text-v1.5", llm_model: str = "openai/gpt-oss-20b", dense_weight: float = 0.6, sparse_weight: float = 0.4, reranker=None):
+    def __init__(self, persist_dir: str = "chroma_db", data_dir: str = "data", embedding_model: str = "nomic-ai/nomic-embed-text-v1.5", dense_weight: float = 0.6, sparse_weight: float = 0.4, reranker=None):
         self.embedder = EmbeddingModel(embedding_model)
         self.vectorstore = ChromaVectorStore(persist_dir)
         self.dense_weight = dense_weight
         self.sparse_weight = sparse_weight
-        self.reranker = reranker  # None for now -- a cross-encoder slots in here later; nothing else changes
+        self.reranker = reranker
 
         self.data_dir = Path(data_dir)
         self.data_dir.mkdir(parents=True, exist_ok=True)

@@ -38,11 +38,6 @@ chain = prompt | llm | StrOutputParser()
 @observe(name="generate")
 def generate(query: str, context: list[str]) -> str:
     """Generate an answer using only the provided context.
-
-    `context` must be a list of chunk strings, NOT a pre-joined string -
-    this function does the joining itself. Passing an already-joined
-    string here will silently break: "\\n\\n".join(a_string) iterates
-    over individual characters, not chunks.
     """
     if not context:
         return "I don't know based on the available documents."
