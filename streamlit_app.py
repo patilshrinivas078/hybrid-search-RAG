@@ -44,11 +44,25 @@ page = st.sidebar.radio("Go to", ["Ask Questions", "Upload Documents"])
 
 retriever = get_retriever()
 
+EXAMPLE_QUESTIONS = [
+    "What is the UIN for the Return to Invoice add-on in two-wheeler insurance?",
+    "What is the issuing office address for the Travel Prime Policy?",
+    "What discount does the Anti-Theft device endorsement provide?",
+]
+
 st.title("Policy Document Assistant")
 
 if page == "Ask Questions":
     if "messages" not in st.session_state:
         st.session_state.messages = []
+
+    if not st.session_state.messages:
+        st.caption("Try asking:")
+        cols = st.columns(len(EXAMPLE_QUESTIONS))
+        for col, q in zip(cols, EXAMPLE_QUESTIONS):
+            with col:
+                if st.button(q, key=f"example_{q}", use_container_width=True):
+                    st.session_state.queued_query = q
 
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
@@ -56,7 +70,8 @@ if page == "Ask Questions":
 
     # Top-level call, not nested in a container - keeps it pinned to the
     # bottom of the viewport (see module docstring).
-    query = st.chat_input("Ask a question about your policy documents...")
+    typed_query = st.chat_input("Ask a question about your policy documents...")
+    query = typed_query or st.session_state.pop("queued_query", None)
     if query:
         st.session_state.messages.append({"role": "user", "content": query})
         with st.chat_message("user"):
