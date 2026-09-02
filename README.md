@@ -1,4 +1,4 @@
-# Enterprise Policy RAG Pipeline
+# Insurance Policy RAG Pipeline
 
 A **Hybrid RAG** system built for insurance policy document search.
 
