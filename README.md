@@ -4,6 +4,8 @@ A **Hybrid RAG** system built for insurance policy document search.
 
 Combines **Dense Vector Search** (ChromaDB + Nomic Embed) with **Sparse Lexical Search** (BM25), fused via **Reciprocal Rank Fusion (RRF)**, re-ranked using a **Cross-Encoder model** (`BAAI/bge-reranker-v2-m3`), and monitored with **Langfuse tracing** and **DeepEval benchmark evaluation**.
 
+https://github.com/user-attachments/assets/9d947011-1445-4d77-8ecb-01c99f938570
+
 ---
 
 ## Key Features
