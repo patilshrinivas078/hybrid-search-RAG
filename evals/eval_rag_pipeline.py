@@ -30,7 +30,7 @@ load_dotenv()
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
-GOLDEN_DATASET = Path("evals/generate_golden.json")
+GOLDEN_DATASET = Path("evals/goldens/generate_golden.json")
 JUDGE_MODEL = "gpt-5-mini"
 
 TOP_K = 5
