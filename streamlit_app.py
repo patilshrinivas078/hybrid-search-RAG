@@ -45,8 +45,8 @@ page = st.sidebar.radio("Go to", ["Ask Questions", "Upload Documents"])
 retriever = get_retriever()
 
 EXAMPLE_QUESTIONS = [
-    "What is the UIN for the Return to Invoice add-on in two-wheeler insurance?",
-    "What is the issuing office address for the Travel Prime Policy?",
+    "How much will I get if my two-wheeler bike's tyre is damaged, and does it matter whether I have the Tyre and Rim add-on?",
+    "If a policyholder dies by suicide during an overseas trip, will their family receive any payout?",
     "What discount does the Anti-Theft device endorsement provide?",
 ]
 
