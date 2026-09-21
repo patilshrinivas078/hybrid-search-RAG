@@ -18,7 +18,7 @@ https://github.com/user-attachments/assets/77b0a9de-0414-4c0f-bb3d-5bc71f879739
 - **Table-Aware Ingestion (Docling)**: PDFs are parsed with **Docling** instead of naive page-text extraction, so:
   - **Two-column layouts** are read in correct order (Docling's layout model resolves reading order before any text is emitted, instead of interleaving columns).
   - **Tables** are detected via Docling's table-structure model and extracted as HTML, instead of being flattened into the surrounding paragraph text.
-- **Multi-Vector Table Retrieval**: Each extracted table is summarized by an LLM for embedding (so search matches on the table's natural-language meaning, e.g. column headers and key figures), while the raw HTML structure is persisted separately in a lightweight table store and swapped back in at retrieval time — the generator reads the actual table structure, not just a description of it.
+- **Multi-Vector Table Retrieval**: Each extracted table is summarized by an LLM for embedding (so search matches on the table's natural-language meaning, e.g. column headers and key figures), while the raw HTML structure is persisted separately in a lightweight table store and swapped back in at retrieval time.
 - **Automated Policy Classification**: Automatic classification of document policy categories (`policy_classifier.py`).
 - **Observability & Tracing**: Native **Langfuse** integration (`@observe` spans) tracking query latency, retrieved context chunks, and generation outputs.
 - **DeepEval Evaluation Suite**:
