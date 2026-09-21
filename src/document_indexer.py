@@ -1,5 +1,7 @@
 """
 document_indexer.py used for Knowledge Base Management
+Currently, this entire functionality is handled withing hybrid_search.py itself.
+This file is kept here for documentation purposes/future reference.
 
 Provides the DocumentIndexer class, which is responsible for building and
 maintaining the knowledge base used by the RAG pipeline.

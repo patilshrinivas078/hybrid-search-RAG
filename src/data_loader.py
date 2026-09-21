@@ -40,7 +40,7 @@ Supported File Formats
 import logging
 from datetime import datetime
 from pathlib import Path
-from typing import Any, Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple, Union
 
 from langchain_community.document_loaders import TextLoader
 from langchain_core.documents import Document
@@ -195,7 +195,7 @@ def load_document(file_path: Path, extra_metadata: Optional[Dict[str, Any]] = No
 
 
 def load_all_documents(
-    data_dir: str, extra_metadata: Optional[Dict[str, Any]] = None,
+    data_dir: Union[str, Path], extra_metadata: Optional[Dict[str, Any]] = None,
 ) -> Tuple[List[Any], List[Dict[str, Any]], List[Dict[str, str]]]:
     """
     Load all PDF/TXT/DOCX files under data_dir (recursively).
