@@ -24,25 +24,31 @@ https://github.com/user-attachments/assets/77b0a9de-0414-4c0f-bb3d-5bc71f879739
 
 ## Key Features
 
-- **Hybrid Retrieval Engine**:
-  - **Dense Vector Search**: Semantic similarity using `nomic-ai/nomic-embed-text-v1.5`.
-  - **Sparse Lexical Search**: BM25 keyword matching for exact key-term/policy-number retrieval.
-  - **Reciprocal Rank Fusion (RRF)**: Weighted fusion balancing keyword accuracy ($0.4$) and semantic depth ($0.6$).
-- **Cross-Encoder Reranking**: Advanced two-stage retrieval using `BAAI/bge-reranker-v2-m3` to score retrieved candidate chunks prior to LLM generation.
-- **Table-Aware Ingestion (Docling)**: PDFs are parsed with **Docling** instead of naive page-text extraction, so:
-  - **Two-column layouts** are read in correct order (Docling's layout model resolves reading order before any text is emitted, instead of interleaving columns).
-  - **Tables** are detected via Docling's table-structure model and extracted as HTML, instead of being flattened into the surrounding paragraph text.
-- **Multi-Vector Table Retrieval**: Each extracted table is summarized by an LLM for embedding (so search matches on the table's natural-language meaning, e.g. column headers and key figures), while the raw HTML structure is persisted separately in a lightweight table store and swapped back in at retrieval time.
-- **Automated Policy Classification**: Automatic classification of document policy categories (`policy_classifier.py`).
-- **Observability & Tracing**: Native **Langfuse** integration (`@observe` spans) tracking query latency, retrieved context chunks, and generation outputs.
-- **DeepEval Evaluation Suite**:
-  - **Retriever Benchmarking**: Contextual Recall & Contextual Precision.
-  - **Generator Benchmarking**: Faithfulness & Answer Relevancy using golden contexts.
-  - **End-to-End Pipeline Evaluation**: Full pipeline validation.
-- **Interactive Interfaces**:
-  - **Streamlit Web Application**: Chat interface with fixed viewport input and document upload interface.
-  - **CLI Interactive Shell**: Command-line interface for rapid testing and batch indexing.
----
+- **Hybrid Retrieval Engine**
+  - **Dense Retrieval:** Semantic search using `nomic-ai/nomic-embed-text-v1.5`.
+  - **Sparse Retrieval:** BM25 for exact keyword and policy-number matching.
+  - **RRF Fusion:** Combines dense and sparse rankings with a `0.6 / 0.4` weighting.
+
+- **Cross-Encoder Reranking**
+  - Reranks retrieved candidates using `BAAI/bge-reranker-v2-m3` before LLM generation.
+
+- **Table-Aware Document Processing**
+  - Uses **Docling** to preserve reading order and extract structured tables from PDFs.
+  - Tables are converted to HTML and retrieved using their semantic summaries while preserving the original structure.
+
+- **Multi-Vector Table Retrieval**
+  - Generates LLM-based table summaries for semantic retrieval while storing the original HTML separately for faithful reconstruction.
+
+- **Automated Policy Classification**
+  - Automatically classifies documents into relevant policy categories during ingestion.
+
+- **Observability & Evaluation**
+  - **Langfuse:** Tracks retrieval, generation, latency, and pipeline traces.
+  - **DeepEval:** Evaluates retrieval quality, faithfulness, answer relevancy, and end-to-end performance.
+
+- **Interactive Interfaces**
+  - **Streamlit:** Web-based chat and document ingestion interface.
+  - **CLI:** Interactive shell for testing and batch indexing.
 
 ## Architecture & Pipeline Flow
 
