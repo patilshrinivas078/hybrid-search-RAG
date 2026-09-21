@@ -27,7 +27,7 @@ from src.reranker import CrossEncoderReranker
 load_dotenv()
 
 DATASET = Path("evals/goldens/golden_dataset.json")
-TOP_K = 8
+TOP_K = 10
 
 RECALL_THRESHOLD = 0.7
 PRECISION_THRESHOLD = 0.6
@@ -72,7 +72,7 @@ def evaluate_retriever(name, retriever, dataset):
     evaluate(
         test_cases=test_cases, 
         metrics=metrics, 
-        async_config=AsyncConfig(max_concurrent=10), 
+        async_config=AsyncConfig(max_concurrent=4), 
         display_config=DisplayConfig(results_folder="./eval-results"), 
         cache_config=CacheConfig(write_cache=False)
     )
