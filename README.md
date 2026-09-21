@@ -1,18 +1,18 @@
 # Insurance Policy RAG Pipeline
 
-[![Python 3.12+](https://img.shields.io/badge/Python-3.12+-blue.svg)](https://www.python.org/downloads/)
-[![LangChain](https://img.shields.io/badge/Framework-LangChain-1C3C3C.svg)](https://www.langchain.com/)
-[![Docling](https://img.shields.io/badge/PDF_Parser-Docling-darkgreen.svg)](https://github.com/DS4SD/docling)
-[![ChromaDB](https://img.shields.io/badge/VectorDB-Chroma-red.svg)](https://www.trychroma.com/)
-[![SQLite](https://img.shields.io/badge/Database-SQLite-003B57.svg)](https://www.sqlite.org/)
-[![Groq](https://img.shields.io/badge/LLM-Groq-orange.svg)](https://groq.com/)
-[![OpenAI](https://img.shields.io/badge/API-OpenAI-412991.svg)](https://openai.com/)
-[![Hugging Face](https://img.shields.io/badge/%F0%9F%A4%97-Hugging_Face-yellow.svg)](https://huggingface.co/)
-[![PyTorch](https://img.shields.io/badge/Framework-PyTorch-EE4C2C.svg)](https://pytorch.org/)
-[![Streamlit](https://img.shields.io/badge/UI-Streamlit-FF4B4B.svg)](https://streamlit.io/)
-[![Langfuse](https://img.shields.io/badge/Tracing-Langfuse-black.svg)](https://langfuse.com/)
-[![DeepEval](https://img.shields.io/badge/Evaluation-DeepEval-purple.svg)](https://confident-ai.com/)
-[![uv](https://img.shields.io/badge/Package_Manager-uv-de5b44.svg)](https://github.com/astral-sh/uv)
+[![Python 3.12+](https://img.shields.io/badge/Python-3.12%2B-3776AB.svg)](https://www.python.org/downloads/)
+[![LangChain](https://img.shields.io/badge/LangChain-1C3C3C.svg)](https://www.langchain.com/)
+[![Docling](https://img.shields.io/badge/Docling-2D2D2D.svg)](https://github.com/DS4SD/docling)
+[![ChromaDB](https://img.shields.io/badge/ChromaDB-FF6F61.svg)](https://www.trychroma.com/)
+[![SQLite](https://img.shields.io/badge/SQLite-003B57.svg)](https://www.sqlite.org/)
+[![Groq](https://img.shields.io/badge/Groq-F55036.svg)](https://groq.com/)
+[![OpenAI](https://img.shields.io/badge/OpenAI-412991.svg)](https://openai.com/)
+[![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-FFD21E.svg)](https://huggingface.co/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C.svg)](https://pytorch.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B.svg)](https://streamlit.io/)
+[![Langfuse](https://img.shields.io/badge/Langfuse-1E1E1E.svg)](https://langfuse.com/)
+[![DeepEval](https://img.shields.io/badge/DeepEval-6C5CE7.svg)](https://confident-ai.com/)
+[![uv](https://img.shields.io/badge/uv-261230.svg)](https://github.com/astral-sh/uv)
 
 A **Hybrid RAG** system built for insurance policy document search.
 
