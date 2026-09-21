@@ -15,6 +15,10 @@ https://github.com/user-attachments/assets/77b0a9de-0414-4c0f-bb3d-5bc71f879739
   - **Sparse Lexical Search**: BM25 keyword matching for exact key-term/policy-number retrieval.
   - **Reciprocal Rank Fusion (RRF)**: Weighted fusion balancing keyword accuracy ($0.4$) and semantic depth ($0.6$).
 - **Cross-Encoder Reranking**: Advanced two-stage retrieval using `BAAI/bge-reranker-v2-m3` to score retrieved candidate chunks prior to LLM generation.
+- **Table-Aware Ingestion (Docling)**: PDFs are parsed with **Docling** instead of naive page-text extraction, so:
+  - **Two-column layouts** are read in correct order (Docling's layout model resolves reading order before any text is emitted, instead of interleaving columns).
+  - **Tables** are detected via Docling's table-structure model and extracted as HTML, instead of being flattened into the surrounding paragraph text.
+- **Multi-Vector Table Retrieval**: Each extracted table is summarized by an LLM for embedding (so search matches on the table's natural-language meaning, e.g. column headers and key figures), while the raw HTML structure is persisted separately in a lightweight table store and swapped back in at retrieval time — the generator reads the actual table structure, not just a description of it.
 - **Automated Policy Classification**: Automatic classification of document policy categories (`policy_classifier.py`).
 - **Observability & Tracing**: Native **Langfuse** integration (`@observe` spans) tracking query latency, retrieved context chunks, and generation outputs.
 - **DeepEval Evaluation Suite**:
@@ -31,8 +35,13 @@ https://github.com/user-attachments/assets/77b0a9de-0414-4c0f-bb3d-5bc71f879739
 ```mermaid
 flowchart TD
     subgraph Ingestion ["1. Ingestion & Indexing"]
-        Docs[PDF / TXT / DOCX Files] --> Loader[Document Loader & Classifier]
-        Loader --> Chunker[Recursive Chunker]
+        Docs[PDF / TXT / DOCX Files] --> Loader[Document Loader & Classifier - Docling for PDFs]
+        Loader --> TextPath[Page Text - Tables Excluded, Reading Order Resolved]
+        Loader --> TablePath[Tables - Extracted as HTML]
+        TablePath --> Summarizer[LLM Table Summarizer]
+        Summarizer --> TableStore[(Table Doc Store - SQLite, Raw HTML)]
+        TextPath --> Chunker[Recursive Chunker]
+        Summarizer --> Chunker
         Chunker --> VectorStore[Chroma Vector Store]
         Chunker --> BM25Index[BM25 Lexical Index]
     end
@@ -49,7 +58,9 @@ flowchart TD
 
     subgraph Reranking ["3. Reranking & LLM Generation"]
         Candidates --> Reranker[Cross-Encoder Reranker]
-        Reranker --> TopChunks[Ranked Context Chunks]
+        Reranker --> Resolve[Resolve Table Hits - Summary Swapped for Full HTML]
+        TableStore --> Resolve
+        Resolve --> TopChunks[Ranked Context Chunks]
         TopChunks --> LLM[LLM Generator - Groq ChatGroq]
         Query --> LLM
         LLM --> Response[Final Answer + Tracing]
@@ -63,10 +74,12 @@ flowchart TD
 | Component | Technology / Library |
 | :--- | :--- |
 | **Framework & Orchestration** | LangChain, Python 3.12 |
+| **PDF Parsing & Table Extraction** | Docling (`docling`, `docling-core`) |
 | **Vector Store** | ChromaDB (`chromadb`, `langchain-chroma`) |
 | **Embedding Model** | `nomic-ai/nomic-embed-text-v1.5` (`sentence-transformers`) |
 | **Sparse Lexical Search** | `rank-bm25` |
 | **Reranker** | `BAAI/bge-reranker-v2-m3` (`SentenceTransformer`) |
+| **Table Store** | SQLite (`sqlite3`, via `TableDocStore`) |
 | **LLM Generator** | Groq API (`ChatGroq` - `openai/gpt-oss-20b` via `langchain-groq`) |
 | **LLM-as-a-Judge (Eval)** | OpenAI API (`gpt-4o-mini` / `gpt-4o` via `deepeval`) |
 | **Observability** | Langfuse (`langfuse`) |
@@ -86,7 +99,7 @@ flowchart TD
 ├── requirements.txt         # Pip package requirements
 ├── src/                     # Core RAG Library
 │   ├── chunking.py          # Document chunking logic
-│   ├── data_loader.py       # Multi-format document loading & metadata tagger
+│   ├── data_loader.py       # Multi-format document loading & metadata tagger (Docling for PDFs)
 │   ├── document_indexer.py  # Indexing pipeline manager
 │   ├── embeddings.py        # Nomic text embedding wrapper
 │   ├── generator.py         # Prompt engineering & LLM generation wrapper
@@ -95,6 +108,7 @@ flowchart TD
 │   ├── reranker.py          # BAAI Cross-Encoder re-ranker wrapper
 │   ├── search.py            # Basic dense vector search interface
 │   ├── sparse_search.py     # BM25 keyword search interface
+│   ├── table_store.py       # Table HTML persistence (TableDocStore) + LLM table summarization
 │   └── vectorstore.py       # ChromaDB vector database wrapper
 ├── evals/                   # DeepEval Benchmark Evaluation Suite
 │   ├── eval_retriever.py    # Isolated Retriever evaluation (Recall & Precision)
@@ -181,6 +195,22 @@ python evals/eval_generator.py
 # Evaluate Full End-to-End RAG Pipeline
 python evals/eval_rag_pipeline.py
 ```
+
+### Results
+
+**Retriever — Hybrid Search + Reranking vs. Vector Search Only**
+
+| Metric | Vector Search Only | Hybrid Search + Reranking |
+| :--- | :---: | :---: |
+| Contextual Precision | 0.78 | **0.90** |
+| Contextual Recall | 0.88 | **0.98** |
+
+**Generator — Faithfulness & Answer Relevancy**
+
+| Metric | Score |
+| :--- | :---: |
+| Faithfulness | **0.97** |
+| Answer Relevancy | **0.96** |
 
 ---
 
