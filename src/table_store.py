@@ -68,12 +68,26 @@ class TableDocStore:
         self._conn.close()
 
 
-def _build_summary_prompt(html: str, caption: str) -> str:
+def summarize_table(html: str, caption: str, llm_fn: Optional[Callable[[str], str]] = None) -> str:
+    """
+    Summarize a table's HTML into a short, natural-language stand-in used
+    for embedding/retrieval (the HTML itself is never embedded).
+
+    Pass llm_fn to use whatever LLM client the rest of the project already
+    uses, as Callable[[str], str] -- takes the prompt, returns the raw
+    completion text. If omitted, falls back to a plain OpenAI call, mainly
+    so this module works standalone / for a quick test.
+
+    Never raises: a bad call for one table (rate limit, bad API key,
+    whatever) shouldn't fail the whole ingestion run -- the HTML is already
+    safely in table_store by the time this is called, regardless of whether
+    summarization succeeds.
+    """
     # Plain concatenation rather than str.format()/f-string templating of a
     # pre-built template -- table HTML can legitimately contain literal
     # "{"/"}" characters (currency codes, JSON-looking cell text, etc.) and
     # we don't want that breaking prompt construction.
-    return (
+    prompt = (
         "You are indexing a table extracted from a policy document for retrieval.\n"
         "Write a concise (3-5 sentence) summary of the table below so someone "
         "searching by topic, column names, or key values could find it. "
@@ -85,45 +99,30 @@ def _build_summary_prompt(html: str, caption: str) -> str:
         "Summary:"
     )
 
-
-def default_llm_fn(prompt: str) -> str:
-    """
-    Minimal OpenAI-backed summarizer, used only if no llm_fn is supplied.
-    Swap this out for whatever LLM client the rest of the project already
-    uses -- this exists so the module works standalone / for a quick test.
-    """
-    from openai import OpenAI
-
-    client = OpenAI()
-    response = client.chat.completions.create(
-        model="gpt-4o-mini",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0,
-    )
-    content = response.choices[0].message.content
-    return content.strip() if content else ""
-
-
-def summarize_table(html: str, caption: str, llm_fn: Callable[[str], str] = default_llm_fn) -> str:
-    prompt = _build_summary_prompt(html, caption)
     try:
-        return llm_fn(prompt)
+        if llm_fn is not None:
+            return llm_fn(prompt)
+
+        from openai import OpenAI
+
+        client = OpenAI()
+        response = client.chat.completions.create(
+            model="gpt-4o-mini",
+            messages=[{"role": "user", "content": prompt}],
+            temperature=0,
+        )
+        content = response.choices[0].message.content
+        return content.strip() if content else ""
     except Exception as e:
         logger.error("Table summarization failed: %s", e)
-        # Don't let one bad table call fail the whole ingestion run -- the
-        # HTML is already safely in table_store regardless of this.
         return f"Table{' - ' + caption if caption else ''} (summary generation failed; raw HTML retained)."
 
 
-def build_table_documents(
-    raw_tables: List[Dict[str, Any]],
-    table_store: TableDocStore,
-    llm_fn: Callable[[str], str] = default_llm_fn,
-) -> List[Document]:
+def build_table_documents(raw_tables: List[Dict[str, Any]], table_store: TableDocStore, llm_fn: Optional[Callable[[str], str]] = None) -> List[Document]:
     """
     For each raw table dict (as produced by data_loader.py's Docling path):
       - persist the HTML in table_store, keyed by table_id
-      - summarize it with llm_fn
+      - summarize it with llm_fn (or the built-in OpenAI fallback)
       - return a Document(page_content=summary, metadata={..., content_type:
         "table", table_id: ...}), ready to be concatenated with regular text
         chunks and embedded.

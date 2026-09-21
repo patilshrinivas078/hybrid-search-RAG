@@ -37,14 +37,8 @@ class ChromaVectorStore:
         metadatas = [chunk.metadata for chunk in chunks]
         ids = [self._chunk_id(chunk) for chunk in chunks] #same chunks will always get same IDs, eventually being overwritten.
 
-        # upsert() only tolerates an id that already exists in the COLLECTION
-        # from a previous call (that's the overwrite case above) -- it
-        # rejects two chunks sharing an id within the SAME call outright.
-        # That happens when two different chunks have byte-identical
-        # page_content (e.g. repeated boilerplate/disclaimer text), which
-        # hashes to the same id. Keep the first occurrence of each id and
-        # drop the rest -- storing identical text under a second id adds no
-        # retrievable information anyway.
+        # Keep the first occurrence of each id and drop the rest, storing identical 
+        # text under a second id adds no retrievable information anyway.
         embeddings_list = embeddings.tolist()
         seen_ids = set()
         dedup_ids, dedup_texts, dedup_embeddings, dedup_metadatas = [], [], [], []
