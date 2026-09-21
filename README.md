@@ -4,7 +4,7 @@
 [![Framework](https://img.shields.io/badge/Framework-LangChain-1C3C3C.svg)](https://www.langchain.com/)
 [![PDF Parser](https://img.shields.io/badge/PDF%20Parser-Docling-2D2D2D.svg)](https://github.com/DS4SD/docling)
 [![VectorDB](https://img.shields.io/badge/VectorDB-ChromaDB-FF6F61.svg)](https://www.trychroma.com/)
-[![Database](https://img.shields.io/badge/Database-SQLite-003B57.svg)](https://www.sqlite.org/)
+[![Table store](https://img.shields.io/badge/Database-SQLite-003B57.svg)](https://www.sqlite.org/)
 [![LLM](https://img.shields.io/badge/LLM-Groq-F55036.svg)](https://groq.com/)
 [![API](https://img.shields.io/badge/API-OpenAI-412991.svg)](https://openai.com/)
 [![Hugging Face](https://img.shields.io/badge/🤗%20Hugging%20Face-FFD21E.svg)](https://huggingface.co/)
