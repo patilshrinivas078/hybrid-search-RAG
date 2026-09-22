@@ -70,23 +70,8 @@ class TableDocStore:
 
 def summarize_table(html: str, caption: str, llm_fn: Optional[Callable[[str], str]] = None) -> str:
     """
-    Summarize a table's HTML into a short, natural-language stand-in used
-    for embedding/retrieval (the HTML itself is never embedded).
-
-    Pass llm_fn to use whatever LLM client the rest of the project already
-    uses, as Callable[[str], str] -- takes the prompt, returns the raw
-    completion text. If omitted, falls back to a plain OpenAI call, mainly
-    so this module works standalone / for a quick test.
-
-    Never raises: a bad call for one table (rate limit, bad API key,
-    whatever) shouldn't fail the whole ingestion run -- the HTML is already
-    safely in table_store by the time this is called, regardless of whether
-    summarization succeeds.
+    Summarize a table's HTML content.
     """
-    # Plain concatenation rather than str.format()/f-string templating of a
-    # pre-built template -- table HTML can legitimately contain literal
-    # "{"/"}" characters (currency codes, JSON-looking cell text, etc.) and
-    # we don't want that breaking prompt construction.
     prompt = (
         "You are indexing a table extracted from a policy document for retrieval.\n"
         "Write a concise (3-5 sentence) summary of the table below so someone "
@@ -120,15 +105,12 @@ def summarize_table(html: str, caption: str, llm_fn: Optional[Callable[[str], st
 
 def build_table_documents(raw_tables: List[Dict[str, Any]], table_store: TableDocStore, llm_fn: Optional[Callable[[str], str]] = None) -> List[Document]:
     """
-    For each raw table dict (as produced by data_loader.py's Docling path):
+    For each raw table dict:
       - persist the HTML in table_store, keyed by table_id
-      - summarize it with llm_fn (or the built-in OpenAI fallback)
+      - summarize it with llm
       - return a Document(page_content=summary, metadata={..., content_type:
-        "table", table_id: ...}), ready to be concatenated with regular text
+        "table", table_id: ...}), which will be concatenated with regular text
         chunks and embedded.
-
-    Typical usage, replacing the old single load_all_documents() -> chunk_documents()
-    -> build_from_chunks() call:
 
         documents, raw_tables, failures = load_all_documents(data_dir)
         table_store = TableDocStore("table_store.sqlite")
