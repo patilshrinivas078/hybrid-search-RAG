@@ -34,7 +34,7 @@ https://github.com/user-attachments/assets/77b0a9de-0414-4c0f-bb3d-5bc71f879739
   - Uses **Docling** to preserve reading order and extract structured tables from PDFs.
   - Tables are converted to HTML and retrieved using their semantic summaries while preserving the original structure.
 - **Multi-Vector Table Retrieval**
-  - Generates LLM-based table summaries for semantic retrieval while storing the original HTML separately for faithful reconstruction.
+  - Searches table summaries, then passes the original HTML to the LLM for accurate response generation.
 - **Automated Policy Classification**
   - Automatically classifies documents into relevant policy categories during ingestion.
 - **Observability & Evaluation**
@@ -88,8 +88,8 @@ flowchart TD
 | Component | Technology / Library |
 | :--- | :--- |
 | **Framework & Orchestration** | LangChain, Python 3.12 |
-| **PDF Parsing & Table Extraction** | Docling (`docling`, `docling-core`) |
-| **Vector Store** | ChromaDB (`chromadb`, `langchain-chroma`) |
+| **PDF Parsing & Table Extraction** | Docling (`docling`) |
+| **Vector Store** | ChromaDB (`chromadb`) |
 | **Embedding Model** | `nomic-ai/nomic-embed-text-v1.5` (`sentence-transformers`) |
 | **Sparse Lexical Search** | `rank-bm25` |
 | **Reranker** | `BAAI/bge-reranker-v2-m3` (`SentenceTransformer`) |
